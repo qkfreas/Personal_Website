@@ -12,5 +12,5 @@ export class AppComponent {
   public setTitle( newTitle: string) {
     this.titleService.setTitle(newTitle);
   }
-  // title = 'webdevq3';
+  // title = 'trashnetworks';
 }
