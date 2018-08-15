@@ -14,4 +14,5 @@ export class HighcardComponent implements OnInit {
   ngOnInit() {
     this.titleService.setTitle('Projects - Java/JavaFX High Card');
   }
+
 }
