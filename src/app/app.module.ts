@@ -34,13 +34,12 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     CommonModule,
-    RouterModule.forRoot(appRoutes),
+    RouterModule.forRoot(appRoutes, { useHash: true}),
     MDBBootstrapModule.forRoot()
   ],
   schemas: [NO_ERRORS_SCHEMA],
   providers: [
-    Title,
-    {provide: LocationStrategy, useClass: HashLocationStrategy}
+    Title
   ],
   bootstrap: [AppComponent]
 })
