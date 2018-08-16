@@ -34,9 +34,10 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     CommonModule,
-    RouterModule.forRoot(appRoutes, { useHash: true}),
+    RouterModule.forRoot(appRoutes, { useHash: true }),
     MDBBootstrapModule.forRoot()
   ],
+  exports: [RouterModule],
   schemas: [NO_ERRORS_SCHEMA],
   providers: [
     Title
