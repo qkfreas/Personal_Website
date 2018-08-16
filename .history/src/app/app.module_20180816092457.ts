@@ -17,8 +17,7 @@ import { ProjectsComponent } from './projects/projects.component';
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent, data: { title: 'Home' } },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: '#', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'projects', component: ProjectsComponent },
+  { path: '#/projects', component: ProjectsComponent },
   { path: 'projects/highcard', component: HighcardComponent, data: { title: 'High Card Project' } },
   { path: 'about', component: AboutComponent }
 ];
