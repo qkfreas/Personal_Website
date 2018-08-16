@@ -9,7 +9,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HighcardComponent } from './projects/highcard/highcard.component';
-import { CommonModule } from '../../node_modules/@angular/common';
+import { CommonModule, LocationStrategy, HashLocationStrategy } from '../../node_modules/@angular/common';
 import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 
@@ -39,7 +39,8 @@ const appRoutes: Routes = [
   ],
   schemas: [NO_ERRORS_SCHEMA],
   providers: [
-    Title
+    Title,
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
   bootstrap: [AppComponent]
 })
