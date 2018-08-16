@@ -22,10 +22,7 @@ const appRoutes: Routes = [
   { path: '#', redirectTo: 'home', pathMatch: 'full' },
   { path: 'projects', component: ProjectsComponent },
   { path: 'projects/highcard', component: HighcardComponent, data: { title: 'High Card Project' } },
-  { path: 'about', component: AboutComponent },
-  { path: 'ksu', component: KsuComponent },
-  { path: 'ksu/it4683', component: It4683Component },
-
+  { path: 'about', component: AboutComponent }
 ];
 
 @NgModule({

@@ -14,6 +14,7 @@ import { AboutComponent } from './components/about/about.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { KsuComponent } from './components/ksu/ksu.component';
 import { It4683Component } from './components/ksu/it4683/it4683.component';
+import { ItToolKitComponent } from './components/ksu/it4683/it-tool-kit/it-tool-kit.component';
 
 
 const appRoutes: Routes = [
@@ -25,7 +26,7 @@ const appRoutes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'ksu', component: KsuComponent },
   { path: 'ksu/it4683', component: It4683Component },
-
+  {path: 'ksu/it4683/itToolKit', component: ItToolKitComponent}
 ];
 
 @NgModule({
@@ -37,7 +38,8 @@ const appRoutes: Routes = [
     AboutComponent,
     ProjectsComponent,
     KsuComponent,
-    It4683Component
+    It4683Component,
+    ItToolKitComponent
   ],
   imports: [
     BrowserModule,

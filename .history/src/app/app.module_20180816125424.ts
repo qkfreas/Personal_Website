@@ -24,8 +24,7 @@ const appRoutes: Routes = [
   { path: 'projects/highcard', component: HighcardComponent, data: { title: 'High Card Project' } },
   { path: 'about', component: AboutComponent },
   { path: 'ksu', component: KsuComponent },
-  { path: 'ksu/it4683', component: It4683Component },
-
+  { path: 'ksu/it4683', component: It4683Component }
 ];
 
 @NgModule({
