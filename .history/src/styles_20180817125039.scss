@@ -1,14 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
-  background-color: #3AAFA9;
+  background-color: #2C3531;
 }
 
 .foreground-container {
   background-color: #FEFFFF;
-  padding-bottom: 15px;
+  padding-bottom: 15px; // border: 1px solid;
   padding: 10px;
-//   box-shadow: 5px 10px 8px #888888;
+  box-shadow: 5px 10px 8px #888888;
 }
 
 .col-project {
@@ -16,7 +16,7 @@ body {
   border: none;
   border-radius: 5px;
   padding: .5% 1%;
-  margin: 1%;
+  margin: 1%; // background-color: thistle;
 }
 
 .row-projects {
@@ -29,20 +29,9 @@ body {
 }
 
 .nav-custom-css {
-  background-color: #2B7A78;
+  background-color: #116466;
   color: #FFFFFF;
   a {
     color: #FFFFFF;
   }
-}
-
-.btn {
-    background-color: #3AAFA9 !important;
-    border: none;
-    color: white;
-    padding: 10px 26px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px; 
 }

@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+
+body {
+  background-color: #FFFFFF;
+}
+
+.foreground-container {
+  background-color: beige;
+  padding-bottom: 15px; // border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.col-project {
+  background-color: #ECEFF1;
+  border: none;
+  border-radius: 5px;
+  padding: .5% 1%;
+  margin: 1%; // background-color: thistle;
+}
+
+.row-projects {
+  :visited {
+    text-decoration: none;
+  }
+  :hover {
+    color: gray;
+  }
+}
+
+.nav-custom-css {
+  background-color: #2C3531;
+  color: #FFFFFF !important;
+  a {
+    color: white !important;
+  }
+}
+
