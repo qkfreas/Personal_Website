@@ -6,6 +6,9 @@ import { environment } from './environments/environment';
 
 if (environment.production) {
   enableProdMode();
+  if (location.protocol === 'http:') {
+    window.location.href = location.href.replace('http','https');
+  }
 }
 
 platformBrowserDynamic().bootstrapModule(AppModule)

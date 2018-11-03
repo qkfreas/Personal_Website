@@ -8,18 +8,26 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 // Components
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { HighcardComponent } from './projects/highcard/highcard.component';
+import { HighcardComponent } from './components/projects/highcard/highcard.component';
 import { CommonModule, LocationStrategy, HashLocationStrategy } from '../../node_modules/@angular/common';
 import { AboutComponent } from './components/about/about.component';
-import { ProjectsComponent } from './projects/projects.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { KsuComponent } from './components/ksu/ksu.component';
+import { It4683Component } from './components/ksu/it4683/it4683.component';
+import { ThisWebsiteComponent } from './components/projects/this-website/this-website.component';
 
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent, data: { title: 'Home' } },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '#', redirectTo: 'home', pathMatch: 'full' },
   { path: 'projects', component: ProjectsComponent },
-  { path: 'projects/highcard', component: HighcardComponent, data: { title: 'High Card Project' } },
-  { path: 'about', component: AboutComponent }
+  { path: 'projects/highcard', component: HighcardComponent },
+  { path: 'projects/this-website', component: ThisWebsiteComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'ksu', component: KsuComponent },
+  { path: 'ksu/it4683', component: It4683Component },
+
 ];
 
 @NgModule({
@@ -29,7 +37,10 @@ const appRoutes: Routes = [
     NavbarComponent,
     HighcardComponent,
     AboutComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    KsuComponent,
+    It4683Component,
+    ThisWebsiteComponent
   ],
   imports: [
     BrowserModule,

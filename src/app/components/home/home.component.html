@@ -1,11 +1,10 @@
 <div class="container foreground-container">
-  <p>THIS IS THE HOME PAGE</p>
   <!-- Content here -->
   <!--Carousel Wrapper-->
   <mdb-carousel [isControls]="true" [animation]="'slide'">
     <!--First slide-->
     <mdb-carousel-item>
-      <img class="d-block w-100" src="assets/highcard.png" alt="First slide">
+      <img class="d-block w-100" src="assets/imgs/highcard.png" alt="First slide">
     </mdb-carousel-item>
     <!--/First slide-->
     <!--Second slide-->
@@ -21,22 +20,53 @@
   </mdb-carousel>
   <!--/.Carousel Wrapper-->
   <div class="container" style="padding-top: 20px">
+    <p class="h3 h3-responsive">Projects</p>
     <div class="row">
-      <div class="col col-project">
+      <div class="col col-project" mdbWavesEffect>
         <h3>Java/JavaFX - High Card</h3>
-        <hr>
-        <br>This is a Java/JavaFX application built for a school project...
+        <hr>This is a Java/JavaFX application built for a school project...
         <br>
-        <a routerLink="/projects/highcard" routerLinkActive="active">Click here for more info!</a>
+        <a class="waves-light btn" routerLink="/projects/highcard" routerLinkActive="active">Click here for more info!</a>
       </div>
       <div class="col col-project">
-        <h3>PROJECT TWO</h3>
-        <hr>
-        <br>This is a description</div>
+        <h3>This Website!</h3>
+        <hr>This one, the one you, the user, are viewing...
+        <br>
+        <br>
+        <a class="waves-light btn" routerLink="/projects/this-website" routerLinkActive="active">Click here for more info!</a>
+      </div>
       <div class="col col-project">
         <h3>PROJECT THREE</h3>
-        <hr>
-        <br>This is a description</div>
+        <hr>This is a description
+        <br><br>
+        <div class="override">
+          <a class="waves-light btn" routerLink="/" routerLinkActive="active">Click here for more info!</a>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+  <div class="container" style="padding-top: 20px">
+    <p class="h3 h3-responsive">IT Compliance</p>
+    <div class="row">
+      <div class="col col-project">
+        <h3>IT Policy</h3>
+        <hr>IT Policy page for IT 4683.
+        <br>
+        <a class="waves-light btn" routerLink="/" routerLinkActive="active">Click here for more info!</a>
+      </div>
+      <div class="col col-project">
+        <h3>IT Governance</h3>
+        <hr>IT Governance page for IT 4683.
+        <br>
+        <a class="waves-light btn" routerLink="/" routerLinkActive="active">Click here for more info!</a>
+      </div>
+      <div class="col col-project">
+        <h3>IT Strategy</h3>
+        <hr>IT Strategy page for IT 4683.
+        <br>
+        <a class="waves-light btn" routerLink="/" routerLinkActive="active">Click here for more info!</a>
+      </div>
+      <hr>
     </div>
   </div>
-</div>
