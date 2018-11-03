@@ -15,7 +15,9 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { KsuComponent } from './components/ksu/ksu.component';
 import { It4683Component } from './components/ksu/it4683/it4683.component';
 import { ThisWebsiteComponent } from './components/projects/this-website/this-website.component';
-
+import { ItPolicyComponent } from './components/ksu/it4683/it-policy/it-policy.component';
+import { ItGovernanceComponent } from './components/ksu/it4683/it-governance/it-governance.component';
+import { ItStrategyComponent } from './components/ksu/it4683/it-strategy/it-strategy.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent, data: { title: 'Home' } },
@@ -27,7 +29,10 @@ const appRoutes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'ksu', component: KsuComponent },
   { path: 'ksu/it4683', component: It4683Component },
-
+  { path: 'ksu/it4683/it-policy', component: ItPolicyComponent },
+  { path: 'ksu/it4683/it-governance', component: ItGovernanceComponent },
+  { path: 'ksu/it4683/it-policy', component: ItPolicyComponent },
+  { path: 'ksu/it4683/it-strategy', component: ItStrategyComponent }
 ];
 
 @NgModule({
@@ -40,7 +45,10 @@ const appRoutes: Routes = [
     ProjectsComponent,
     KsuComponent,
     It4683Component,
-    ThisWebsiteComponent
+    ThisWebsiteComponent,
+    ItPolicyComponent,
+    ItGovernanceComponent,
+    ItStrategyComponent
   ],
   imports: [
     BrowserModule,
