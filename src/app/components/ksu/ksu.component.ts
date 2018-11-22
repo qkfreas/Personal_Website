@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-ksu',
@@ -7,9 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KsuComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router, private titleService: Title) { }
 
   ngOnInit() {
+    this.titleService.setTitle('Kennesaw State University');
   }
 
 }
