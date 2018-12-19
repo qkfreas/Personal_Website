@@ -18,6 +18,7 @@ import { ThisWebsiteComponent } from './components/projects/this-website/this-we
 import { ItPolicyComponent } from './components/ksu/it4683/it-policy/it-policy.component';
 import { ItGovernanceComponent } from './components/ksu/it4683/it-governance/it-governance.component';
 import { ItStrategyComponent } from './components/ksu/it4683/it-strategy/it-strategy.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent, data: { title: 'Home' } },
@@ -48,7 +49,8 @@ const appRoutes: Routes = [
     ThisWebsiteComponent,
     ItPolicyComponent,
     ItGovernanceComponent,
-    ItStrategyComponent
+    ItStrategyComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
