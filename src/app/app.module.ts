@@ -19,6 +19,7 @@ import { ItPolicyComponent } from './components/ksu/it4683/it-policy/it-policy.c
 import { ItGovernanceComponent } from './components/ksu/it4683/it-governance/it-governance.component';
 import { ItStrategyComponent } from './components/ksu/it4683/it-strategy/it-strategy.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { LebenComponent } from './components/leben/leben.component';
 
 const appRoutes: Routes = [
   { path: 'home', component: HomeComponent, data: { title: 'Home' } },
@@ -33,7 +34,8 @@ const appRoutes: Routes = [
   { path: 'ksu/it4683/it-policy', component: ItPolicyComponent },
   { path: 'ksu/it4683/it-governance', component: ItGovernanceComponent },
   { path: 'ksu/it4683/it-policy', component: ItPolicyComponent },
-  { path: 'ksu/it4683/it-strategy', component: ItStrategyComponent }
+  { path: 'ksu/it4683/it-strategy', component: ItStrategyComponent },
+  { path: 'leben', component: LebenComponent}
 ];
 
 @NgModule({
@@ -50,7 +52,8 @@ const appRoutes: Routes = [
     ItPolicyComponent,
     ItGovernanceComponent,
     ItStrategyComponent,
-    FooterComponent
+    FooterComponent,
+    LebenComponent
   ],
   imports: [
     BrowserModule,
